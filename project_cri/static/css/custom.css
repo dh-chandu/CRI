@@ -1,0 +1,215 @@
+.logo{
+    width: 90px;
+}
+.a_href{
+	font-size:12px;
+	white-space: nowrap;
+	padding:15px;
+	text-align:center;
+ }
+ a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+.wrapper-content {
+  padding: 20px 10px 0px;
+}
+.ibox-content {
+  background-color: #ffffff;
+  color: inherit;
+  padding: 15px 5px 10px 5px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0;
+}
+table.dataTable{
+	border-collapse: collapse !important;
+}
+table.table-bordered > thead > tr{
+  white-space: nowrap;
+  font-size:small;
+	color: white;
+	background-color:#1ab394 !important;
+	text-align:center;
+}
+/* Bootstrap Table */
+table.table-bordered > tbody > tr > td{
+   white-space: nowrap;
+   font-size: small;
+	 padding:.2vh;
+	 text-align:center;
+}
+
+.ibox-title_custom{
+	background-color:#1ab394;
+	color: white;
+	border-radius:2px;
+	padding: 12px 90px 6px 15px;
+    min-height: 8px;
+}
+.ibox-title_custom_sub_heading{
+	background-color:rgb(237, 85, 101);
+	color: white;
+	border-radius:2px;
+	vertical-align: middle;
+	padding: 2px 10px 2px 10px;
+    min-height: 1px;
+}
+.fieldset{
+        border: 1px solid rgba(153, 153, 153, 0.75);
+		border-radius: 2px;
+        padding: 10px;
+        vertical-align: baseline;
+		margin:auto;
+		margin-bottom:1vh;
+		min-width: 140vh;
+}
+.hr-line-dashed_custom{
+  border-top: 1px dashed #e7eaec;
+  color: #ffffff;
+  background-color: #ffffff;
+  height: 1px;
+  margin: 5px 5px;
+}
+.fieldset_custom{
+	border: 2px solid rgba(153, 153, 153, 0.75);
+	box-sizing: border-box;
+	margin-left:0px;
+	margin-bottom:10px;
+	padding: 1px 1px;
+	width: 70vh;
+}
+textarea{
+   padding:1px 1px 1px 1px;
+   width: 29.5vh;
+   height:4.5vh;
+}
+input[type="radio"]{
+  margin-top: 14px !important;
+}
+.checkbox-custom input[type="checkbox"]:checked + label::before,
+.checkbox-custom input[type="radio"]:checked + label::before {
+  background-color: black;
+  border-color: black;
+}
+.checkbox-custom input[type="checkbox"]:checked + label::after,
+.checkbox-custom input[type="radio"]:checked + label::after {
+  color: #fff;
+}
+.label_custom{
+	font-weight:normal;
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    padding: 1.5vh;
+	max-height:100vh;
+	font-size:12px;
+    top:1vh;
+	right:35vh;
+    border: 1px solid #7e99b1;
+    width: 130vh;
+}
+.modal_overflow {
+        overflow-y: auto;
+        max-height: 72vh;
+}
+.reviewFormText input[type=text] {
+    width: 29vh;
+    font-size: 12px;
+	  border-radius: 4px;
+    background-color: #ffffad;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+	  margin: 5px;
+	  margin-left:12px;
+    padding: 5px 5px 5px 5px;
+}
+.reviewFormTextArea textarea{
+   padding:5px 5px 5px 5px;
+   margin-left: 12px !important;
+   margin-top: 5px !important;
+   background-color: #ffffad;
+   border-radius: 4px;
+   font-size: 10px;
+   width: 29vh;
+   height:4vh;
+}
+.checkListTextArea textarea{
+  background-color: #ffffad;
+  height:3vh;
+}
+
+input:disabled {
+  background: #EBEBE4 !important;
+}
+textarea:disabled {
+  background: #EBEBE4 !important;
+}
+input:-moz-read-only { /* For Firefox */
+  background-color: #EBEBE4 !important;
+}
+input:read-only {
+  background-color: #EBEBE4 !important;
+}
+textarea:-moz-read-only { /* For Firefox */
+  background-color: #EBEBE4 !important;
+}
+textarea:read-only {
+  background-color: #EBEBE4 !important;
+}
+
+select{
+	width: 29vh;
+	border-radius: 3px;
+	border: 2px solid #ccc;
+  padding:5px;
+  text-align: center;
+	font-size:12px;
+}
+.sk-spinner-wave.sk-spinner {
+  margin: 0 auto;
+  padding-left:300px;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+.sk-spinner-wave div {
+  background-color: #ed5565;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+  animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+}
+.sk-spinner-wave .sk-rect6 {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+.sk-spinner-wave .sk-rect7 {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+.sk-spinner-wave .sk-rect8 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.sk-spinner-wave .sk-rect9 {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.sk-spinner-wave .sk-rect10 {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+.sk-spinner-wave .sk-rect11 {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}

@@ -1,0 +1,52 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="color:Tomato;" href="{% url 'home' %}">SCM</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <!-- <li class="active"><a href="#">Home</a></li> -->
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">CRI
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'cri_status'%}">Status page</a></li>
+                <li><a href="#">Add Project</a></li>
+                <li><a href="#">Add Branch</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">CRI_test_setup <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{% url 'cri_test_setup_status'%}">Status page</a></li>
+                  <li><a href="#">Add Project</a></li>
+                  <li><a href="#">Add Branch</a></li>
+                </ul>
+              </li>
+              <!-- <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              {% if user.is_authenticated %}
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.username }} <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{% url 'cri_test_setup_status'%}">My account </a></li>
+                    <li><a href="{% url 'logout' %}">Log out</a></li>
+                  </ul>
+                </li>
+              {% else %}
+              <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>

@@ -1,0 +1,37 @@
+{% extends 'base_accounts.html' %}
+{% load widget_tweaks %}
+{% load static %}
+
+{% block title %}Log in to Django Boards{% endblock %}
+{%block body_header%} <body class="gray-bg login-bg" > {%endblock%}
+{% block content %}
+<div class="middle-box text-center loginscreen animated fadeInDown ">
+<div>
+            <h5 class="logo-name">CRI</h5>
+</div>
+    <div class="login-box" >
+
+        <hr/>
+        <p class="log-head">Welcome to CRI!</p>
+        <form action="" class="m-t" role="form" id="login_form" method="POST">{% csrf_token %}
+                  <div class="form-group">
+                <!-- <input type="text" name="userName" class="form-control" placeholder="Username" required=""> -->
+                {% render_field form.username placeholder="Username" class="form-control"  %}
+            </div>
+            <div class="form-group">
+                <!-- <input type="password" name="password" class="form-control" placeholder="password" required=""> -->
+                {% render_field form.password placeholder="password" class="form-control"%}
+            </div>
+            <button type="submit" name="submit" class="btn btn-primary block full-width m-b" >Login</button>
+        </form>
+        <hr/>
+        <p class="m-t company m-t-login"> Juniper Networks </p>
+        <small>&copy; 2019, All Rights Reserved</small>
+         <small>Terms of Use|Privacy</small>
+    </div>
+</div>
+{%block endscripts%}
+<script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+{% endblock %}
+{%endblock%}

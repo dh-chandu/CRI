@@ -1,0 +1,51 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/gif/png" href="{% static 'images/juniper-ic-logo.png'%}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRI | Login</title>
+
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{% static 'font-awesome/css/font-awesome.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg login-bg">
+
+    <div class="middle-box text-center loginscreen animated fadeInDown ">
+		<div>
+                <h5 class="logo-name">CRI</h5>
+            </div>
+        <div class="login-box" >
+
+            <hr/>
+            <p class="log-head">Welcome to CRI!</p>
+            <form action="" class="m-t" role="form" id="login_form" method="POST">{% csrf_token %}
+			                <div class="form-group">
+                    <!-- <input type="text" name="Username" class="form-control" placeholder="Username" required=""> -->
+                    {% render_field form.username placeholder="Username" class="form-control"  %}
+                </div>
+                <div class="form-group">
+                    <!-- <input type="password" name="password" class="form-control" placeholder="Password" required=""> -->
+                    {% render_field form.password placeholder="password" class="form-control"%}
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary block full-width m-b" >Login</button>
+            </form>
+            <hr/>
+            <p class="m-t company m-t-login"> Juniper Networks </p>
+            <small>&copy; 2019, All Rights Reserved</small>
+             <small>Terms of Use|Privacy</small>
+        </div>
+    </div>
+<script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+</body>
+</html>
