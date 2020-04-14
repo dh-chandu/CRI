@@ -77,7 +77,23 @@ step 3 : generate models.py from existing tables of existing DB using below comm
 
          went fine this time.
 
-setting up multiple DBs refer below link 
+setting up multiple DBs refer below link
 #https://www.protechtraining.com/blog/post/tutorial-using-djangos-multiple-database-support-477
 
 #Note once yousetup dbrouter and setting.py you need to do python manage.py makemigration and python manage.py  migrate to take effect.
+--------------------
+while setting up in ubuntu.
+follow tthe instructions from here : https://stackoverflow.com/questions/20126475/importerror-no-module-named-sqlite3-in-python3-3
+i.e
+
+apt-get install sqlite3
+sqlite3 -version
+apt-get install python-pysqlite2
+apt-get install python-pysqlite2-dbg
+apt-get install libsqlite3-dev
+apt-get install sqlite
+pip install pysqlite
+
+then
+
+pip3 install django-widget-tweaks
